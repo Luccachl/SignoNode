@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administração de Enquetes</title>
+  <link rel="stylesheet" href="../CSS/sadmin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciar Enquetes</h1>
+        <form id="poll-form">
+            <label for="title">Título:</label><br>
+            <input type="text" id="title" placeholder="Título" required><br>
+            <label for="end_date">Data de término:</label><br>
+            <input type="datetime-local" id="end_date" required><br>
+            <label for="options">Opções:</label>
+            <div id="options">
+                <input type="text" placeholder="Opção 1" required><br>
+                <input type="text" placeholder="Opção 2" required><br>
+                <input type="text" placeholder="Opção 3" required><br>
+            </div>
+            <button type="button" id="add-option">Adicionar Opção</button>
+            <button type="submit">Salvar Enquete</button>
+        </form>
+        <div id="polls"></div>
+        <button onclick="location.href='vote.html'">Página de Votação</button>
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

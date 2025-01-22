@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    height: 100vh;
+    overflow-y: auto; 
+  }
+  
+  .container {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+  }
+  
+  button:hover {
+    background-color: #4a54e1;
+  }
+  
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #poll-form {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  #poll-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  #poll-form input[type="text"], #poll-form input[type="datetime-local"] {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #poll-form button {
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+  }
+  
+  #poll-form button:hover {
+    background-color: #4a54e1;
+  }
+  
+  #polls {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  #polls div {
+    margin-bottom: 20px;
+  }
+  
+  #polls button {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  #polls button:hover {
+    background-color: #ff5b51;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 20px;
+      max-height: none; 
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    button {
+      font-size: 1em;
+    }
+  
+    #poll-form input[type="text"], #poll-form input[type="datetime-local"] {
+      width: 100%;
+    }
+  }
+  
